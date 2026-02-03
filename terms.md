@@ -21,15 +21,15 @@ Your notes may include sensitive or confidential reflections. Please take care i
 
 ## 3. Local Device Storage
 
-Everything you enter into the app remains on your device. The app does not transmit, upload, or sync your data to any online service. If your device is lost, damaged, or replaced, your entries may not be recoverable unless you have backed up your device through your operating system\'92s standard backup tools.
+Everything you enter into the app remains on your device. The app does not transmit, upload, or sync your data to any online service. If your device is lost, damaged, or replaced, your entries may not be recoverable unless you have backed up your device through your operating system's standard backup tools.
 
 ## 4. No User Accounts
 
-The LTG app does not create or require user accounts. You are not asked to sign in, and no personal profile is created.\
+The LTG app does not create or require user accounts. You are not asked to sign in, and no personal profile is created.
 
 ## 5. Managing and Deleting Entries
 
-You may delete entries at any time using the swipe to delete gesture within the app.\
+You may delete entries at any time using the swipe to delete gesture within the app.
 
 If you delete the app from your device, all stored entries will be permanently removed. Please be mindful of this before uninstalling.
 
