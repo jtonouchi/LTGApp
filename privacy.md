@@ -40,11 +40,11 @@ If you uninstall the app, all stored data will be permanently removed from your 
 
 ## 5. Children's Privacy
 
-This app is intended for general audiences and does not knowingly collect personal information from children. Because no data is collected or transmitted, the app aligns naturally with child\uc0\u8209 safety expectations.
+This app is intended for general audiences and does not knowingly collect personal information from children. Because no data is collected or transmitted, the app aligns naturally with child safety expectations.
 
 ## 6. Security
 
-Because all data remains on your device, its security depends on your device\'92s settings and protections (such as passcodes or biometric locks). Please safeguard your device accordingly.
+Because all data remains on your device, its security depends on your device's settings and protections (such as passcodes or biometric locks). Please safeguard your device accordingly.
 
 ## 7. Changes to This Policy
 
