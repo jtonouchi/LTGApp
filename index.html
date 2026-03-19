@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>App Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+       --error: #dc2626;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card-bg);
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      padding: 24px 20px 28px;
+    }
+
+    @media (min-width: 640px) {
+      .page {
+        padding: 32px 32px 36px;
+      }
+    }
+
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #eff6ff;
+      font-size: 40px;
+      font-weight: 700;
+      box-shadow: 0 14px 30px rgba(53, 123, 131, 0.45);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+    }
+
+
+    .header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .section {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 10px;
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .section p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .link-row a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .link-row a:hover {
+      text-decoration: underline;
+    }
+
+    .button-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      appearance: none;
+      border: none;
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.15s ease, transform 0.08s ease, box-shadow 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #ffd400;
+      color: #000000;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-primary:hover {
+      background: #e6bf00;
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .btn-secondary:hover {
+      background: #d1d5db;
+    }
+
+    form {
+      margin-top: 8px;
+      display: grid;
+      gap: 10px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #374151;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 9px 10px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      background: #f9fafb;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(53, 123, 131, 0.25);
+      background: #ffffff;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .required {
+      color: var(--error);
+      margin-left: 2px;
+    }
+
+    .form-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- App icon -->
+    <div class="icon-wrapper">
+      <!-- Replace inner text with your logo image if desired -->
+      <!-- Example image version: -->
+      <img src="Light-ALT-rescale.png" alt="App Icon" class="app-icon" />
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>LTG App Support</h1>
+      <p>Support page for the LTG App</p>
+    </div>
+
+    <!-- Privacy Policy -->
+    <section class="section">
+      <h2>Privacy Policy</h2>
+      <p>Review how your data is collected, used, and protected in our privacy policy.</p>
+
+      <div class="button-row">
+        <!-- Privacy Policy button -->
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="window.open('https://your-domain.com/privacy-policy', '_blank', 'noopener');"
+        >
+          View Privacy Policy
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>If you’re experiencing an issue or have feedback, send us a message below.</p>
+
+      <!--
+        Configure the form action to your backend or service (e.g., Formspree, your API).
+        For example:
+        action="https://formspree.io/f/your-id" method="POST"
+      -->
+      <form action="#" method="POST">
+        <div class="field-group">
+          <label for="name">
+              Name<span class="required">*</span>
+	  </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="email">
+              Email<span class="required">*</span>
+           </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="subject">
+              Subject<span class="required">*</span>
+           </label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="What can we help you with?"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="message">
+              Message<span class="required">*</span>
+           </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Describe your issue or feedback..."
+            required
+          ></textarea>
+        </div>
+
+
+       <div class="form-footer">
+          <button class="btn btn-primary" type="submit">
+            Submit
+          </button>
+          <p class="footer-note">
+            Fields marked with <span class="required">*</span> are required.
+          </p>
+       </div>
+
+
+      </form>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> LTG App. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Simple dynamic year for footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
