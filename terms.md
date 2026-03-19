@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-**Last Updated: February 2, 2026**
+**Last Updated: March 18, 2026**
 
 Thank you for choosing to use the Life Transformation Groups (LTG) app. This discipleship tool is designed to support your walk with Christ and your fellowship with others. The following terms help ensure clarity and good stewardship of this resource.
 
@@ -45,6 +45,3 @@ Please use the app in a manner consistent with its intended purpose: spiritual r
 
 From time to time, these terms may be updated to reflect improvements or changes in the app. Continued use of the app after updates means you accept the revised terms.
 
-## 9. Contact
-
-If you have questions or concerns about these terms, please reach out to the developer through the contact information provided in the App Store listing.
