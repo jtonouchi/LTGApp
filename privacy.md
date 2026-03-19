@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last Updated: February 2, 2026**
+**Last Updated: March 18, 2026**
 
 As you use this app to reflect, pray, and grow, your privacy matters. This policy explains how your information is handled with care and simplicity.
 
@@ -52,4 +52,4 @@ This policy may be updated occasionally. Any changes will be reflected in the ve
 
 ## 8. Contact
 
-If you have questions or concerns about these terms, please contact the developer through the contact information provided in the App Store listing.
+If you have questions or concerns about the Terms or this Privacy Policy, please contact the developer at jontonouchi.ltg@gmail.com.
